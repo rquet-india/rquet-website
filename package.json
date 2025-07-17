@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && cp _headers _redirects _routes.json out/",
+    "build": "next build && cp _headers _redirects _routes.json out/ && cp -r functions out/ || true",
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export"
