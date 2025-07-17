@@ -1,0 +1,5 @@
+{
+  "name": "rquet",
+  "compatibility_date": "2025-07-17",
+  "main": "functions/_middleware.ts"
+}
