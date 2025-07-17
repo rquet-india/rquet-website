@@ -18,6 +18,7 @@ export interface Tournament {
   registrationUrl: string;
   isFeatured: boolean;
   createdAt: string;
+  prizePool?: string;
 }
 
 export interface TournamentFilters {

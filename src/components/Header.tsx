@@ -2,62 +2,57 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
+import { Menu, X, Github } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10">
+    <header className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b" style={{ borderColor: 'var(--border)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">🏸</span>
-                </div>
-                <div>
-                  <h1 className="text-2xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">
-                    rquet
-                  </h1>
-                  <p className="text-xs text-slate-400 -mt-1">
-                    Bangalore Racquet Sports
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </div>
+        <div className="flex justify-center items-center relative" style={{ padding: 'var(--space-md) 0' }}>
+          <Link href="/" className="font-bold text-xl hover:opacity-80 transition-opacity" style={{ color: 'var(--primary)' }}>
+            Rquet
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="flex items-center space-x-4">
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-slate-300 hover:text-white transition-colors font-medium">
+          <div className="absolute right-0 flex items-center" style={{ gap: 'var(--space-xl)' }}>
+            <nav className="hidden md:flex" style={{ gap: 'var(--space-xl)' }}>
+              <Link href="/" className="font-medium transition-colors hover:text-white" style={{ color: 'var(--text-secondary)' }}>
                 Home
               </Link>
-              <Link href="/tournaments" className="text-slate-300 hover:text-white transition-colors font-medium">
+              <Link href="/tournaments" className="font-medium transition-colors hover:text-white" style={{ color: 'var(--text-secondary)' }}>
                 Tournaments
               </Link>
-              <Link href="/about" className="text-slate-300 hover:text-white transition-colors font-medium">
+              <Link href="/about" className="font-medium transition-colors hover:text-white" style={{ color: 'var(--text-secondary)' }}>
                 About
               </Link>
-              <Link href="/contact" className="text-slate-300 hover:text-white transition-colors font-medium">
+              <Link href="/contact" className="font-medium transition-colors hover:text-white" style={{ color: 'var(--text-secondary)' }}>
                 Contact
               </Link>
             </nav>
 
-            {/* Theme Toggle */}
-            <ThemeToggle />
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            <div className="flex items-center" style={{ gap: 'var(--space-md)' }}>
+              {/* GitHub Link */}
+              <a
+                href="https://github.com/rquet-india/rquet-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost p-2 rounded-lg"
+                title="Edit this website on GitHub"
               >
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
+                <Github size={20} />
+              </a>
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="btn btn-ghost p-2 rounded-lg"
+                >
+                  {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -65,19 +60,29 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-4 pb-3 space-y-2 sm:px-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700">
-              <Link href="/" className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all">
+            <div className="px-2 pt-4 pb-3 space-y-2 sm:px-3 backdrop-blur-sm border-t" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <Link href="/" className="block px-4 py-3 rounded-lg transition-all hover:bg-gray-800" style={{ color: 'var(--text-secondary)' }}>
                 Home
               </Link>
-              <Link href="/tournaments" className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all">
+              <Link href="/tournaments" className="block px-4 py-3 rounded-lg transition-all hover:bg-gray-800" style={{ color: 'var(--text-secondary)' }}>
                 Tournaments
               </Link>
-              <Link href="/about" className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all">
+              <Link href="/about" className="block px-4 py-3 rounded-lg transition-all hover:bg-gray-800" style={{ color: 'var(--text-secondary)' }}>
                 About
               </Link>
-              <Link href="/contact" className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all">
+              <Link href="/contact" className="block px-4 py-3 rounded-lg transition-all hover:bg-gray-800" style={{ color: 'var(--text-secondary)' }}>
                 Contact
               </Link>
+              <a
+                href="https://github.com/rquet-india/rquet-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 px-4 py-3 rounded-lg transition-all hover:bg-gray-800"
+                style={{ color: 'var(--text-secondary)' }}
+              >
+                <Github size={18} />
+                <span>Edit on GitHub</span>
+              </a>
             </div>
           </div>
         )}
