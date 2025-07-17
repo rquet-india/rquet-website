@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1",
+    "title": "Bangalore Open Badminton Championship",
+    "description": "Annual badminton tournament featuring players from across Karnataka. Singles and doubles categories available for all skill levels.",
+    "sport": "badminton",
+    "date": "2024-08-15",
+    "time": "09:00",
+    "venue": {
+      "name": "Kanteerava Indoor Stadium",
+      "address": "Kasturba Road, Bangalore, Karnataka 560001",
+      "googleMapsUrl": "https://maps.google.com/maps?q=Kanteerava+Indoor+Stadium+Bangalore"
+    },
+    "organizer": {
+      "name": "Karnataka Badminton Association",
+      "contact": "+91 80 2234 5678",
+      "email": "info@karnatabadminton.org"
+    },
+    "registrationUrl": "https://example.com/register/badminton-championship",
+    "isFeatured": true,
+    "createdAt": "2024-07-01T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Koramangala Squash League",
+    "description": "Weekly squash league for intermediate and advanced players. Round-robin format with prizes for top performers.",
+    "sport": "squash",
+    "date": "2024-08-20",
+    "time": "18:00",
+    "venue": {
+      "name": "Koramangala Club",
+      "address": "80 Feet Road, Koramangala, Bangalore, Karnataka 560095",
+      "googleMapsUrl": "https://maps.google.com/maps?q=Koramangala+Club+Bangalore"
+    },
+    "organizer": {
+      "name": "Koramangala Sports Club",
+      "contact": "+91 80 4567 8901",
+      "email": "sports@koramangalaclub.com"
+    },
+    "registrationUrl": "https://example.com/register/squash-league",
+    "isFeatured": true,
+    "createdAt": "2024-07-05T14:30:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Indiranagar Tennis Open",
+    "description": "Community tennis tournament for residents of Indiranagar. Men's and women's singles, doubles, and mixed doubles categories.",
+    "sport": "tennis",
+    "date": "2024-08-25",
+    "time": "07:00",
+    "venue": {
+      "name": "Indiranagar Tennis Club",
+      "address": "12th Main Road, Indiranagar, Bangalore, Karnataka 560008",
+      "googleMapsUrl": "https://maps.google.com/maps?q=Indiranagar+Tennis+Club+Bangalore"
+    },
+    "organizer": {
+      "name": "Indiranagar Residents Association",
+      "contact": "+91 80 3456 7890",
+      "email": "tennis@indiranagarresidents.org"
+    },
+    "registrationUrl": "https://example.com/register/tennis-open",
+    "isFeatured": false,
+    "createdAt": "2024-07-10T09:15:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Corporate Table Tennis Championship",
+    "description": "Inter-company table tennis tournament. Team and individual events for corporate employees across Bangalore.",
+    "sport": "table-tennis",
+    "date": "2024-09-01",
+    "time": "10:00",
+    "venue": {
+      "name": "Phoenix Marketcity Sports Zone",
+      "address": "Whitefield Main Road, Bangalore, Karnataka 560048",
+      "googleMapsUrl": "https://maps.google.com/maps?q=Phoenix+Marketcity+Whitefield+Bangalore"
+    },
+    "organizer": {
+      "name": "Bangalore Corporate Sports League",
+      "contact": "+91 80 5678 9012",
+      "email": "events@bcsl.org"
+    },
+    "registrationUrl": "https://example.com/register/corporate-table-tennis",
+    "isFeatured": true,
+    "createdAt": "2024-07-12T16:45:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Whitefield Badminton Festival",
+    "description": "Weekend badminton festival with multiple categories, coaching sessions, and equipment demos.",
+    "sport": "badminton",
+    "date": "2024-09-07",
+    "time": "08:00",
+    "venue": {
+      "name": "Whitefield Sports Complex",
+      "address": "EPIP Zone, Whitefield, Bangalore, Karnataka 560066",
+      "googleMapsUrl": "https://maps.google.com/maps?q=Whitefield+Sports+Complex+Bangalore"
+    },
+    "organizer": {
+      "name": "Whitefield Sports Association",
+      "contact": "+91 80 6789 0123",
+      "email": "info@whitefieldsports.com"
+    },
+    "registrationUrl": "https://example.com/register/badminton-festival",
+    "isFeatured": false,
+    "createdAt": "2024-07-15T11:20:00Z"
+  },
+  {
+    "id": "6",
+    "title": "HSR Layout Squash Tournament",
+    "description": "Monthly squash tournament for HSR Layout residents. Beginner to advanced categories available.",
+    "sport": "squash",
+    "date": "2024-09-15",
+    "time": "17:00",
+    "venue": {
+      "name": "HSR Sports Club",
+      "address": "Sector 3, HSR Layout, Bangalore, Karnataka 560102",
+      "googleMapsUrl": "https://maps.google.com/maps?q=HSR+Sports+Club+Bangalore"
+    },
+    "organizer": {
+      "name": "HSR Layout Residents Welfare Association",
+      "contact": "+91 80 7890 1234",
+      "email": "sports@hsrrwa.org"
+    },
+    "registrationUrl": "https://example.com/register/hsr-squash",
+    "isFeatured": false,
+    "createdAt": "2024-07-18T13:10:00Z"
+  }
+]
